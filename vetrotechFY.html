@@ -1,0 +1,99 @@
+<template>
+    <lightning-card icon-name="standard:ai_accelerator_card" title={Title}>
+        <div class="slds-scrollable_x" style="height:auto;width:100rem" tabindex="0">
+        <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">
+            <thead>
+                <tr>
+                    <th rowspan="3" style="text-align: center;">KAM</th>
+                    <th colspan="6" style="text-align: center;">E</th>
+                    <th rowspan="2" colspan="2" style="text-align: center; text-decoration:bold; Background-color: lightGrey;">Total E</th>
+                    <th colspan="4" style="text-align: center;">EW</th>
+                    <th rowspan="2" colspan="2" style="text-align: center; text-decoration:bold; Background-color: lightGrey;">Total EW</th>
+                    <th colspan="4" style="text-align: center;">Vetroflam</th>
+                    <th rowspan="2" colspan="2" style="text-align: center; text-decoration:bold; Background-color: lightGrey;">Total Vetroflam</th>
+                    <th colspan="6" style="text-align: center;">EI</th>
+                    <th rowspan="2" colspan="2" style="text-align: center; text-decoration:bold; Background-color: lightGrey;">Total EI</th>
+                    <th rowspan="2" colspan="2" style="text-align: center; text-decoration:bold; Background-color: lightGrey;">Total Mono</th>
+                </tr>
+                <tr>
+                <template for:each={Columns} for:item="lable">
+                    
+                  <th key={lable} colspan="2">{lable}</th>
+                   
+                </template></tr>
+                
+                <tr>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+                    <th style="background-color: lightgrey;">M2</th>
+                    <th style="background-color: lightgrey;">%</th>
+
+                </tr>     
+                </thead>
+            <tbody>
+               <template for:each={data} for:item="value">
+
+                <tr key={value.KAM}>
+                    <th><b>{value.KAM}</b></th>
+                    <th>{value.PY60}</th>
+                    <th>{value.PY60prsnt}</th>
+                    <th>{value.PY160}</th>
+                    <th>{value.PY160prsnt}</th>
+                    <th>{value.KER120}</th>
+                    <th>{value.KER120prsnt}</th>
+                    <th>{value.TotalE}</th>
+                    <th>{value.Eprsnt}</th>
+                    <th>{value.CFDL120}</th>
+                    <th>{value.CFDL120prsnt}</th>
+                    <th>{value.CFL120}</th>
+                    <th>{value.CFL120prsnt}</th>
+                    <th>{value.TotalEW}</th>
+                    <th>{value.EWprsnt}</th>
+                    <th>{value.INDIA120}</th>
+                    <th>{value.INDIA120prsnt}</th>
+                    <th>{value.OUTSIDE120}</th>
+                    <th>{value.OUTSIDE120prsnt}</th>
+                    <th>{value.TotalVetro}</th>
+                    <th>{value.Vetroprsnt}</th>
+                    <th>{value.CONT30}</th>
+                    <th>{value.CONT30prsnt}</th>
+                    <th>{value.CONT60}</th>
+                    <th>{value.CONT60prsnt}</th>
+                    <th>{value.CONT120}</th>
+                    <th>{value.CONT120prsnt}</th>
+                    <th>{value.TotalEI}</th>
+                    <th>{value.EIprsnt}</th>
+                    <th>{value.TotalMono}</th>
+                    <th>{value.Monoprsnt}</th>
+                </tr>
+
+               </template>
+            </tbody>
+        </table></div></lightning-card>
+    </template>

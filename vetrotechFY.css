@@ -1,0 +1,25 @@
+.slds-table {
+    width: 100%;
+    border-collapse: collapse;
+  
+  }
+  
+  .slds-table_cell-buffer td,
+  .slds-table_cell-buffer th {
+    padding: 0.75rem;
+  }
+  
+  .slds-table_bordered {
+    border: 1px solid #d3d3d3;
+  }
+  
+  .slds-table_col-bordered th,
+  .slds-table_col-bordered td {
+    border-right: 1px solid #d3d3d3;
+    /*background-color: rgb(104, 207, 238);*/
+  }
+  
+  .slds-table_col-bordered th:last-child,
+  .slds-table_col-bordered td:last-child {
+    border-right: none;
+  }
